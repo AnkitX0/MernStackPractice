@@ -1,0 +1,47 @@
+Date- 12/05/26
+
+@How the web Work
+User -> DNS Lookup -> HTTP Request -> Database -> Http request -> Browser Render
+
+
+@ HTTP & HTTPS
+>HTTP Methods
+Get- Retrive/Read data from server
+Post- Send new data to server
+Put- Update existing Data
+Patch- Partially update existing data
+Delete- Remove data
+
+> HTTP Status Code
+200 - ok (Success!)
+201 - Created
+301 - Moved
+400 - Bad Request
+401 - Unauthorized  (Need to login)
+403 - Forbidden (Access denied)
+404 - Not Found
+500 - Server Error
+
+
+@Client vs Server
+> Client
+Run in user browser
+HTML, CSS, JavaScript, React.js
+User can see this code (view source code)
+Send request, receive and display
+> Server
+Run on Powerful computers in data server
+Node.js, Express.js, Database,
+Authentication, security & business logic
+User CANNOT see server side code
+Processes request, send back response
+
+
+@FrontEnd & Backend Technologies
+>Frontend(Client Side)
+Html5, CSS3, JavaScript, React.js, Bootstrap, Tailwind
+> Backend(Server side)
+Node.js, Express.js, Python, Java, PHP, MongoDb
+
+
+@HTML

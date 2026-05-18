@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action">
+        <Fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="FNamw Name SurNAme" required>
+<br>
+<br>
+            <label for="email" id ="Email" name="Email">Email:</label>
+            <input type="text" id="Email" name="Email" placeholder="abc@gmail.com" required>
+<br><br>
+
+            <Label for="Phone">Phone:</Label>
+            <input type="text" name="phone" id="phone" placeholder="957485XXXX">
+        </Fieldset>
+
+        <fieldset>
+            <legend>Number Input</legend>
+           <label for="age" >Age:</label>
+           <input type="number" value="20">
+           
+           
+        </fieldset>
+
+
+    <fieldset>
+        <legend>Date & Time Inputs</legend>
+
+        <label>Date:</label>
+        <input type="date">
+        <br><br>
+
+        <label>Time:</label>
+        <input type="time">
+        <br><br>
+
+        <label>Date & Time:</label>
+        <input type="datetime-local">
+        <br><br>
+
+        <label>Month:</label>
+        <input type="month">
+
+    </fieldset>
+
+<fieldset>
+    <legend>Choice Inputs</legend>
+
+    <!-- Gender -->
+    <p><strong>Gender:</strong></p>
+
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label>
+
+    <br><br>
+
+    <!-- Skills -->
+    <p><strong>Skills:</strong></p>
+
+    <input type="checkbox" id="html" name="skills" value="HTML">
+    <label for="html">HTML</label>
+
+    <input type="checkbox" id="css" name="skills" value="CSS">
+    <label for="css">CSS</label>
+
+    <input type="checkbox" id="js" name="skills" value="JavaScript">
+    <label for="js">JavaScript</label>
+
+    <br><br>
+
+    <!-- City -->
+    <label for="city">City:</label>
+
+    <select id="city" name="city">
+        <option>Select City</option>
+        <option>Delhi</option>
+        <option>Mumbai</option>
+        <option>Bangalore</option>
+    </select>
+
+    <br><br>
+
+    <!-- Browser -->
+    <label for="browser">Browser:</label>
+    <input type="text" id="browser" name="browser">
+
+</fieldset>
+<hr>
+
+<fieldset>
+    <legend>File & Color Inputs</legend>
+
+    <!-- File Upload -->
+    <label for="file">Upload File:</label>
+    <input type="file" id="file" name="file">
+
+    <br><br>
+
+    <!-- Color Picker -->
+    <label for="color">Favorite Color:</label>
+    <input type="color" id="color" name="color">
+
+</fieldset>
+
+<hr>
+
+<fieldset>
+    <legend>Textarea</legend>
+
+    <!-- Textarea -->
+    <label for="message">Message:</label><br>
+
+    <textarea id="message" name="message"
+        rows="5" cols="40"
+        placeholder="Write something..."></textarea>
+
+</fieldset>
+
+<br>
+
+<!-- Buttons -->
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+<button type="button">Normal Button</button>
+
+
+    </form>
+
+    
+</body>
+</html>
