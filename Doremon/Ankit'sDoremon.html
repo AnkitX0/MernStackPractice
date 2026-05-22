@@ -48,6 +48,26 @@
             left: 140px;
             border: black solid ;
         }
+        .LeftEyesBall{
+    width: 12px;
+    height: 12px;
+    border: black solid 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 53px;
+    left: 94px;
+
+        }
+        .RightEyesBall{
+    width: 12px;
+    height: 12px;
+    border: black solid 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 53px;
+    left: 155px;
+        }
+
         .Nose{
     width: 45px;
     height: 45px;
@@ -59,7 +79,71 @@
     border: black   solid ;
         }
 
-       
+
+        .StrainghtHair{
+    width: 2.9px;
+    height: 97px;
+    background-color: black;
+    position: absolute;
+    top: 126px;
+    left: 140px;
+}
+
+    .LeftHair1{
+    width: 1.5px;
+    height: 77px;
+    background-color: black;
+    position: absolute;
+    top: 98px;
+    left: 98px;
+    transform: rotate(110deg);
+}
+    .LeftHair2{ 
+    width: 1.5px;
+    height: 77px;
+    background-color: black;
+    position: absolute;
+    top: 125px;
+    left: 89px;
+    transform: rotate(91deg);
+}
+    .LeftHair3{
+    width: 1.5px;
+    height: 76px;
+    background-color: black;
+    position: absolute;
+    top: 150px;
+    left: 96px;
+    transform: rotate(73deg);
+}
+    .RightHair1{
+    width: 1.5px;
+    height: 77px;
+    background-color: black;
+    position: absolute;
+    top: 98px;
+    left: 183px;
+    transform: rotate(70deg);
+}
+    .RightHair2{
+    width: 1.5px;
+    height: 77px;
+    background-color: black;
+    position: absolute;
+    top: 126px;
+    left: 190px;
+    transform: rotate(91deg);
+}
+    .RightHair3{
+    width: 1.5px;
+    height: 76px;
+    background-color: black;
+    position: absolute;
+    top: 150px;
+    left: 186px;
+    transform: rotate(106deg);
+
+}
 
           .WhiteFace{
             
@@ -68,22 +152,24 @@
     background-color: white;
     border-radius: 50%;
     position: absolute;
-    top: 50px;
+    top: 35px;
     left: 18px;
     
             border: black solid ;
         }
 
       .Smile{
-
+    
     width: 200px;
     height: 36px;
-    top: 125px;
-    left: 38px;
+    top: 187px;
+    left: 41px;
     border: 3px solid;
     position: absolute;
     border-top-color: #000000;
     border-top: none;
+    
+    border-bottom: black solid 4px;
     border-radius: 0 0 100px 100px;
 }
         
@@ -139,7 +225,7 @@
     
     top: 243px;
     border-radius: 50px;
-    height: 286px;
+    height: 245px;
     left: 17px;
     background-color: #2e6dec;
     border: black solid;
@@ -152,7 +238,7 @@
     background-color: red;
     position: absolute;
     top: 242px;
-    left: 13px;
+    left: 17px;
     border-radius: 11px;
 border: black solid ;
 
@@ -176,10 +262,43 @@ border: black solid ;
     background-color: #f0c419;
     border-radius: 50%;
     position: absolute;  
-    top: 250px;
-    left: 117px;
+    top: 260px;
+    left: 120px;
     border: black solid;
 }
+        .BellRing{
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    position: absolute;
+    top: 283px;
+    left: 137px;
+    border: black solid;
+}
+        .BellStandingLine{
+    width: 3px;
+    height: 13px;
+    border-radius: 13px;
+    background-color: black;
+    position: absolute;
+    top: 297px;
+    left: 143px;
+}
+        .BellStandingLine2{
+    width: 6px;
+    height: 56px;
+    background: rgb(180, 182, 183);
+    position: absolute;
+    top: 249px;
+    border-radius: 44px;
+    left: 141px;
+    transform: rotate(90deg);
+}
+
+
+
+
 
         .Pocket{
     
@@ -196,8 +315,30 @@ border: black solid ;
 }
 
 
+    .Leg{
+   
+    width: 116px;
+    height: 60px;
+    background-color: white;
+    border-radius: 47%;
+    /* position: absolute; */
+    /* top: 488px; */
+    /* left: 17px; */
+    border: black solid;
+}
+    #LeftLeg{
+    margin-top: 95px;
+    margin-left: 30px;
+    }
+    #RightLeg{
+    margin-top: -66px;
+    margin-left: 150px;
+    }
 
-        
+
+
+
+
         </style>
 </head>
 
@@ -207,8 +348,24 @@ border: black solid ;
         
         <div class="Face"></div>
         <div class="WhiteFace"></div>
+
         <div class="LeftEyes"></div>
         <div class="RightEyes"></div>
+
+        <div class="LeftEyesBall"></div>
+        <div class="RightEyesBall"></div>
+
+        <div class="StrainghtHair"> </div>
+        
+        <div class="LeftHair1"> </div>
+        <div class="LeftHair2"> </div>
+        <div class="LeftHair3"> </div>
+
+        <div class="RightHair1"> </div>
+        <div class="RightHair2"> </div> 
+        <div class="RightHair3"> </div>
+
+
         <div class="Nose"></div>
 
         <div class="Smile"> </div>
@@ -221,12 +378,22 @@ border: black solid ;
         <div class="RightHand"></div>
     
         <div class="Body"></div>
-        <div class="Collar"></div>
         <div class= " Belly"></div>
         <div class=" Pocket"></div>
+        
+        <div class="Collar"></div>
+
         <div class="Bell"></div>
+        <div class = "BellRing"></div>
+        <div class = " BellStandingLine"    ></div>
+        <div class = " BellStandingLine2"    ></div>
+        <div class="Leg" id="LeftLeg"></div>
+        <div class="Leg" id="RightLeg"></div>
+
 
 
     </div>
+
+    
 </body>
 </html>
