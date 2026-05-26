@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flipkar</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        /* Header and Navigation */
+        .Header{
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .FlipkarLogo{
+            width: 10%;
+            height: 45px;
+            background-color: yellow;
+            border-radius: 10px;
+        }
+
+        .TravelLogo{
+            width: 10%;
+            height: 45px;
+            background-color: rgb(219, 216, 203);
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+
+        .Location{
+            width: 30%;
+            height: 45px;
+            border-radius: 10px;
+            margin-left: auto;
+        }
+
+
+
+        /* Search Bar and Icons */
+
+        .Navigation{
+            width: 100%;
+            height: 50px;
+        }
+
+        .SearchBar{
+            width: 60%;
+            height: 30px;
+            /* background-color: rgb(40, 111, 218); */
+            display: inline-block;
+            border-radius: 5px;
+        }
+        .SearchInput{
+            width: 90%;
+            height: 100%;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        
+
+        .SearchIcon{
+            width: 10%;
+            height: 30px;
+            border: 2px solid black;
+            background-color: rgb(152, 167, 216);
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+
+
+
+        /* Icon Section */
+
+        IconsMain{
+            width: 100%;
+            height: 50px;
+        }
+        
+        .Icon{
+            width: 8%;
+            height: 50px;
+            border-radius: 5px;
+            border: 2px solid black;
+            display: inline-block;
+        }
+        .ScrollImages{
+            margin-top: 20px;
+        }
+        .Image{
+            width: 30%;
+            height: 200px;
+            border: 2px solid black;
+            background-color: rgb(200, 200, 200);
+            display: inline-block;
+            margin: 10px;
+        }
+
+
+
+        /* Popular Near Me Section */
+
+        .PopularNearMe{
+            background-color: yellow;
+            margin-top: 20px;
+        }
+        .PopularNearMe h2{
+            margin-left: 10px;
+        }
+        .PopularImage{
+            width: 20%;
+            height: 200px;
+            border: 2px solid black;
+            background-color: rgb(200, 200, 200);
+            display: inline-block;
+            margin: 15px;
+        }
+
+
+
+
+
+        </style>
+</head>
+<body>
+
+    <header class="Header">   
+        <div class="FlipkarLogo">Flipkar</div>
+        <div class="TravelLogo"> Tavel</div>
+        <div class="Location"> Location not Set SetYour Location</div>
+    </header>
+    <main>
+
+        <div class="Navigation">
+            
+            <div class="SearchBar">
+                <input type="text" placeholder="Search for products, brands and more" class="SearchInput">
+            </div>
+            <div class="SearchIcon">Login</div>
+            <div class="SearchIcon">More</div>
+            <div class="SearchIcon">Cart</div>
+        </div>
+
+
+        <div class="IconsMain">
+
+            <div class = "Icon">For You</div>
+            <div class = "Icon">Fashion</div>
+            <div class = "Icon">Mobiles</div>
+            <div class = "Icon">Electronics</div>
+            <div class = "Icon">Home</div>
+            <div class = "Icon">Appliances</div>
+            <div class = "Icon">Travel</div>
+            <div class = "Icon">Beauty</div>
+            <div class = "Icon">Toys</div>
+            <div class = "Icon">Grocery</div>
+            <div class = "Icon">Furniture</div>
+        </div>
+
+        <div class="ScrollImages">
+            <img src="SlideImage1.webp" alt="Image 1" class="Image">
+            <img src="SlideImage2.webp" alt="Image 2" class="Image">
+            <img src="SlideImage3.webp" alt="Image 3" class="Image">
+        </div>
+
+        <div class  = "PopularNearMe">
+            <h2>Popular Near Me</h2>
+            <img src="popularpick2.png" alt="Image 1" class="PopularImage">
+            <img src="popularpick2.png" alt="Image 2" class="PopularImage">
+            <img src="popularpick3.png" alt="Image 3" class="PopularImage">
+            <img src="popularpick4.png" alt="Image 3" class="PopularImage">
+            
+        </div>
+
+    
+</body>
+</html>
