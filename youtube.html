@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Youtube Clone</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: black;
+        font-family: Arial;
+      }
+
+      /* SIDEBAR */
+
+      .sidebar {
+        width: 220px;
+        height: 100vh;
+
+        background: #0f0f0f;
+
+        position: fixed;
+        left: 0;
+        top: 0;
+
+        overflow-y: auto;
+
+        padding-top: 70px;
+      }
+
+      /* SECTION */
+
+      .sidebar-section {
+        padding: 10px 12px;
+      }
+
+      /* SIDEBAR ITEM */
+
+      .sidebar-item {
+        display: flex;
+        align-items: center;
+
+        gap: 15px;
+
+        padding: 10px 12px;
+
+        border-radius: 10px;
+
+        cursor: pointer;
+
+        color: white;
+
+        transition: 0.3s;
+      }
+
+      /* HOVER */
+
+      .sidebar-item:hover {
+        background: #272727;
+      }
+
+      /* ACTIVE */
+
+      .active {
+        background: #272727;
+      }
+
+      /* ICON */
+
+      .sidebar-item span {
+        font-size: 20px;
+      }
+
+      /* TEXT */
+
+      .sidebar-item p {
+        font-size: 15px;
+      }
+
+      /* CHANNEL IMAGE */
+
+      .sidebar-item img {
+        width: 28px;
+        height: 28px;
+
+        border-radius: 50%;
+      }
+
+      /* HEADING */
+
+      .sidebar-section h3 {
+        color: white;
+
+        font-size: 16px;
+
+        margin-bottom: 10px;
+
+        padding-left: 10px;
+      }
+
+      /* LINE */
+
+      hr {
+        border: 0.5px solid #272727;
+      }
+
+      /* NAVBAR */
+
+      .nav {
+        width: 100%;
+        height: 60px;
+        background: #0f0f0f;
+
+        position: fixed;
+        top: 0;
+        left: 0px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 0 20px;
+      }
+
+      /* LEFT PART */
+
+      .left-nav {
+        display: flex;
+        align-items: center;
+      }
+
+      .toolBarIcon img {
+        width: 33px;
+        cursor: pointer;
+        border: 1px solid #333;
+        border-radius: 25%;
+        background-color: #3d3939;
+        padding: 5px;
+      }
+
+      .logo img {
+        width: 100px;
+        margin-left: 20px;
+      }
+
+      /* SEARCH */
+
+      .search-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .search {
+        width: 500px;
+        height: 40px;
+
+        background: #121212;
+
+        border: 1px solid #333;
+        border-radius: 20px;
+
+        padding: 0 15px;
+        color: white;
+      }
+
+      .search input {
+        width: 100%;
+        height: 100%;
+
+        background: transparent;
+        border: none;
+        outline: none;
+
+        color: white;
+        font-size: 16px;
+      }
+
+      /* RIGHT NAV */
+
+      .right-nav {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+
+        margin-right: 40px;
+      }
+
+      /* MIC BUTTON */
+
+      .mic {
+        width: 42px;
+        height: 42px;
+
+        background: #272727;
+
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: white;
+
+        font-size: 20px;
+
+        cursor: pointer;
+      }
+
+      /* CREATE BUTTON */
+
+      .createButton {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        background: #272727;
+
+        padding: 10px 16px;
+
+        border-radius: 25px;
+
+        color: white;
+
+        cursor: pointer;
+
+        font-weight: 600;
+
+        transition: 0.3s;
+      }
+
+      .createButton:hover {
+        background: #3a3a3a;
+      }
+
+      .createButton span {
+        font-size: 24px;
+      }
+
+      /* NOTIFICATION */
+
+      .notification {
+        color: white;
+
+        font-size: 24px;
+
+        cursor: pointer;
+      }
+
+      /* PROFILE */
+
+      .profilelogo img {
+        width: 36px;
+        height: 36px;
+
+        border-radius: 50%;
+
+        object-fit: cover;
+
+        cursor: pointer;
+      }
+
+      /* MAIN CONTENT */
+      .main-content {
+        margin-left: 220px;
+        margin-top: 60px;
+      }
+
+      
+    </style>
+  </head>
+
+  <body>
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+      <!-- TOP SECTION -->
+
+      <div class="sidebar-section">
+        <div class="sidebar-item active">
+          <span>🏠</span>
+          <p>Home</p>
+        </div>
+
+        <div class="sidebar-item">
+          <span>🎬</span>
+          <p>Shorts</p>
+        </div>
+
+        <div class="sidebar-item">
+          <span>📺</span>
+          <p>Subscriptions</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- YOU SECTION -->
+
+      <div class="sidebar-section">
+        <h3>You</h3>
+
+        <div class="sidebar-item">
+          <span>🕘</span>
+          <p>History</p>
+        </div>
+
+        <div class="sidebar-item">
+          <span>📃</span>
+          <p>Playlists</p>
+        </div>
+
+        <div class="sidebar-item">
+          <span>⏰</span>
+          <p>Watch Later</p>
+        </div>
+
+        <div class="sidebar-item">
+          <span>👍</span>
+          <p>Liked Videos</p>
+        </div>
+
+        <div class="sidebar-item">
+          <span>⬇️</span>
+          <p>Downloads</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- SUBSCRIPTIONS -->
+
+      <div class="sidebar-section">
+        <h3>Subscriptions</h3>
+
+        <div class="sidebar-item">
+          <img
+            src="https://yt3.googleusercontent.com/FEcjRtez5od8UowDo6tTt9WlE-MrIFEmcwPMTORmK9Swk6KCklOmA3xfIG9WuLWfNYfNThQE=s900-c-k-c0x00ffffff-no-rj"
+          />
+          <p>Apna College</p>
+        </div>
+
+        <div class="sidebar-item">
+          <img
+            src="https://yt3.googleusercontent.com/ytc/AIdro_kX3sdbuu3KFmRPsmlu0R5Rx_BhpxwupjtvJmkEdNfla7w=s900-c-k-c0x00ffffff-no-rj"
+          />
+          <p>CodeWithHarry</p>
+        </div>
+
+        <div class="sidebar-item">
+          <img
+            src="https://yt3.googleusercontent.com/HCv0fXFEEcD0HRyF0_qR1K7b7qO3KCzmIoyH1DEJYB94CIUFhIE5i2t2IDIPX97W1-DK4hegww=s160-c-k-c0x00ffffff-no-rj"
+          />
+          <p>Programming with Mosh</p>
+        </div>
+
+        <div class="sidebar-item">
+          <img
+            src="https://yt3.googleusercontent.com/ytc/AIdro_krv40fPSZ2UDcfAgx-mvf86wIm52oBZnuMLiaju9oxvQ=s900-c-k-c0x00ffffff-no-rj"
+          />
+          <p>Love Babbar</p>
+        </div>
+
+        <div class="sidebar-item">
+          <img
+            src="https://yt3.googleusercontent.com/0nsZM3NF0C9bFr2IFXicMJ1w82ldRaZvGKFnezBe2lpW7F9gI92FaLubcTghnNNt4Ld8DfRvEMo=s900-c-k-c0x00ffffff-no-rj"
+          />
+          <p>Telusko</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- EXPLORE -->
+
+      <div class="sidebar-section">
+        <h3>Explore</h3>
+
+        <div class="sidebar-item">
+          <span>🔥</span>
+          <p>Trending</p>
+        </div>
+
+        <div class="sidebar-item">
+          <span>🎵</span>
+          <p>Music</p>
+        </div>
+
+        <div class="sidebar-item">
+          <span>🎮</span>
+          <p>Gaming</p>
+        </div>
+
+        <div class="sidebar-item">
+          <span>📰</span>
+          <p>News</p>
+        </div>
+
+        <div class="sidebar-item">
+          <span>🏆</span>
+          <p>Sports</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+
+    <div class="nav">
+      <div class="left-nav">
+        <div class="toolBarIcon">
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" />
+        </div>
+
+        <div class="logo">
+          <a href="https://www.youtube.com/">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- SEARCH -->
+
+      <div class="search-container">
+        <div class="search">
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+
+      <div class="right-nav">
+        <div class="mic">🎤</div>
+
+        <div class="createButton">
+          <span>＋</span>
+          <p>Create</p>
+        </div>
+
+        <div class="notification">🔔</div>
+
+        <div class="profilelogo">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/005/544/708/small_2x/profile-icon-design-free-vector.jpg" />
+        </div>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
+

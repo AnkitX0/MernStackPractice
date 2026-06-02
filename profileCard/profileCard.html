@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .banner {
+            background-color: #007bff;
+            height: 200px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .profile-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 370px;
+            text-align: center;
+            padding: 20px;
+        }
+        .profile-image img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            display: inline;
+            margin-top: -130px;
+            border: 5px solid #007bff;
+        }
+        .profile-info h2 {
+            margin: 15px 0 5px;
+        }
+        .profile-info p {
+            font-size: 20px;
+            margin: 5px 0;
+        }
+        .Icons ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .Icons ul li {
+            margin: 0 10px;
+        }
+        .Icons ul li img {
+            display: block;
+            width: 55px;
+            height: 55px;
+            background-size: cover;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+
+        .botton {
+            display: inline-flex;
+            justify-content: center;
+        }
+        .button1 , .button2 {
+            background-color: #007bff;
+            display: inline-block;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+    padding: 13px 45px;
+            margin: 10px;
+            cursor: pointer;
+        
+        }
+        .like , .Comment , .Share {
+            display: inline-flex;
+            align-items: center;
+            color: #666;
+            font-size: 16px;
+            
+        }
+        
+        .action {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .action div {
+            color: #666;
+        }
+
+    
+        #partition1 {
+            margin: 0 10px;
+            color: #ccc;
+            height: 20px;
+        }
+        #partition2 {
+            margin: 0 10px;
+            color: #ccc;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+        
+    <div class="profile-card">
+        <div class="banner">
+        </div>
+        <div class="profile-image">
+            <img src="Icon/profine.jpeg" alt="Profile Image">
+        </div>
+        <div class="profile-info">
+            <h2>CodingLab</h2>
+            <p>YouTuber & Blogger</p>
+        </div>
+
+        <div class="Icons">
+            <ul>
+                <li><img src="Icon/facebook.png" alt="facebook icons"></li>
+                <li><img src="Icon/twitter.png" alt="twitter icons"></li>
+                <li><img src="Icon/instagram.png" alt="instagram icons"></li>
+                <li><img src="Icon/youtube.png" alt="youtube icons"></li>
+            </ul>
+        </div>
+
+        <div class="button">
+
+            <div class="button1">
+                Follow
+            </div>  
+            <div class="button2">
+                Message
+            </div>
+
+        </div>  
+
+        <div class="action">
+            <div class="Like"> <img src="Icon/heart.png" alt="Like icons" class="icon">60.4k</div>
+            <div class="Partition" id="partition1"> | </div>
+            <div class="Comment"><img src="Icon/chat-bubble.png" alt="Comment icons" class="icon"> 20k</div>
+            <div class="Partition" id="partition2"> | </div>
+            <div class="Share"> <img src="Icon/share.png" alt="Share icons" class="icon"> 12.4k</div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+</body>
+</html>

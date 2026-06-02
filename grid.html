@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Chess Board</title>
+    
+    <style>   
+        
+        .grid {
+            width: 500px;
+            height: 500px;
+            margin: 0 25vw;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            border: 2px solid black;
+            align-items: auto;
+            /* width: 100%; */
+            
+        }
+        .gridBoxWhite {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            color: white;
+            box-sizing: border-box;
+        }
+        .gridBoxBlack {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-color: black;
+            color: white;
+            box-sizing: border-box;
+        }
+        </style>
+</head>
+<body>
+    
+
+    <!-- the chess board is made up of 64 boxes, 32 white and 32 black. The boxes are arranged in an 8x8 grid, with the white and black boxes alternating in a checkerboard pattern. The first box in the top left corner is white, and the last box in the bottom right corner is black. -->
+
+    <div class="grid">
+
+        <!-- this is first row -->
+        <div class=" gridBoxWhite" class="fa-sharp-duotone fa-solid fa-chess"><img src="chessIcon/chess-44-512.png" alt="White Chess Piece" height="100%" width="100%"></div>
+        <div class=" gridBoxBlack"> This is Box Two</div>
+        <div class=" gridBoxWhite"> This is Box Three</div>
+        <div class=" gridBoxBlack"> This is Box Four</div>
+        <div class=" gridBoxWhite"> This is Box Five</div>
+        <div class=" gridBoxBlack"> This is Box Six</div>
+        <div class=" gridBoxWhite"> This is Box Seven</div>
+        <div class=" gridBoxBlack"> This is Box Eight</div>
+
+
+        <!-- this is second row -->
+        <div class=" gridBoxBlack"> This is Box Ten</div>
+        <div class=" gridBoxWhite"> This is Box Eleven</div>
+        <div class=" gridBoxBlack"> This is Box Twelve</div>
+        <div class=" gridBoxWhite"> This is Box Thirteen</div>
+        <div class=" gridBoxBlack"> This is Box Fourteen</div>
+        <div class=" gridBoxWhite"> This is Box Fifteen</div>
+        <div class=" gridBoxBlack"> This is Box Sixteen</div>
+        <div class=" gridBoxWhite"> This is Box Nine</div>
+
+        <!-- this is third row -->
+        <div class=" gridBoxWhite"> This is Box Seventeen</div>
+        <div class=" gridBoxBlack"> This is Box Eighteen</div>
+        <div class=" gridBoxWhite"> This is Box Nineteen</div>
+        <div class=" gridBoxBlack"> This is Box Twenty</div>
+        <div class=" gridBoxWhite"> This is Box Twenty-One</div>
+        <div class=" gridBoxBlack"> This is Box Twenty-Two</div>
+        <div class=" gridBoxWhite"> This is Box Twenty-Three</div>
+        <div class=" gridBoxBlack"> This is Box Twenty-Four</div>
+
+        <!-- this is fourth row -->
+        <div class=" gridBoxBlack"> This is Box Twenty-Six</div>
+        <div class=" gridBoxWhite"> This is Box Twenty-Seven</div>
+        <div class=" gridBoxBlack"> This is Box Twenty-Eight</div>
+        <div class=" gridBoxWhite"> This is Box Twenty-Nine</div>
+        <div class=" gridBoxBlack"> This is Box Thirty</div>
+        <div class=" gridBoxWhite"> This is Box Thirty-One</div>
+        <div class=" gridBoxBlack"> This is Box Thirty-Two</div>
+        <div class=" gridBoxWhite"> This is Box Twenty-Five</div>
+
+        <!-- this  is fifth row -->
+        <div class=" gridBoxWhite"> This is Box Thirty-Three</div>
+        <div class=" gridBoxBlack"> This is Box Thirty-Four</div>
+        <div class=" gridBoxWhite"> This is Box Thirty-Five</div>
+        <div class=" gridBoxBlack"> This is Box Thirty-Six</div>
+        <div class=" gridBoxWhite"> This is Box Thirty-Seven</div>
+        <div class=" gridBoxBlack"> This is Box Thirty-Eight</div>
+        <div class=" gridBoxWhite"> This is Box Thirty-Nine</div>
+        <div class=" gridBoxBlack"> This is Box Forty</div>
+
+        <!-- this is sixth row -->
+        <div class=" gridBoxBlack"> This is Box Forty-Two</div>
+        <div class=" gridBoxWhite"> This is Box Forty-Three</div>
+        <div class=" gridBoxBlack"> This is Box Forty-Four</div>
+        <div class=" gridBoxWhite"> This is Box Forty-Five</div>
+        <div class=" gridBoxBlack"> This is Box Forty-Six</div>
+        <div class=" gridBoxWhite"> This is Box Forty-Seven</div>
+        <div class=" gridBoxBlack"> This is Box Forty-Eight</div>
+        <div class=" gridBoxWhite"> This is Box Forty-One</div>
+
+        <!-- this is seventh row -->
+        <div class=" gridBoxWhite"> This is Box Forty-Nine</div>
+        <div class=" gridBoxBlack"> This is Box Fifty</div>
+        <div class=" gridBoxWhite"> This is Box Fifty-One</div>
+        <div class=" gridBoxBlack"> This is Box Fifty-Two</div>
+        <div class=" gridBoxWhite"> This is Box Fifty-Three</div>
+        <div class=" gridBoxBlack"> This is Box Fifty-Four</div>
+        <div class=" gridBoxWhite"> This is Box Fifty-Five</div>
+        <div class=" gridBoxBlack"> This is Box Fifty-Six</div>
+
+        <!-- this is eighth row -->
+
+        <div class=" gridBoxBlack"> This is Box Fifty-Eight</div>
+        <div class=" gridBoxWhite"> This is Box Fifty-Nine</div>
+        <div class=" gridBoxBlack"> This is Box Sixty</div>
+        <div class=" gridBoxWhite"> This is Box Sixty-One</div>
+        <div class=" gridBoxBlack"> This is Box Sixty-Two</div>
+        <div class=" gridBoxWhite"> This is Box Sixty-Three</div>
+        <div class=" gridBoxBlack"> This is Box Sixty-Four</div>
+        <div class=" gridBoxWhite"> This is Box Fifty-Seven</div>
+</body>
+</html>
