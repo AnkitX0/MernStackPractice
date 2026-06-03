@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+    background-color: rgb(101, 101, 255);
+    margin: auto;
+    width: 800px;
+    height: 800px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 250px 250px 250px; 
+    grid-template-rows: 200px 200px 200px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.box{
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(91, 18, 159, 0.455);
+    border: 2px solid black;
+}
+#seven{
+    grid-column: 1/3;
+    background-image: url(https://storage.groupgreeting.com/assets/images/covers/ANY-bubbles-SM2-2023.gif);
+    background-size: cover;
+    text-align: center;
+    font-weight: 500;
+    font-size: 150%;
+}
+#six{
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+#five{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+#four{
+    font-weight: 700;
+    font-size: 150%;
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+.fh{
+    font-size: 300%;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="one" class="box"></div>
+        <div id="two" class="box">25K</div>
+        <div id="three" class="box">50K</div>
+        <div id="four" class="box">Active Users</div>
+        <div id="five" class="box">DESIGN</div>
+        <div id="six" class="box"><h1>200k</h1></div>
+    </div>
+</body>
+</html>

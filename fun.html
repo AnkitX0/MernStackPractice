@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Viewer Replica</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#1a1a1a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+/* FULL SCREEN VIEWER */
+
+.viewer{
+    width:1200px;
+    height:700px;
+    background:#111;
+    border-radius:4px;
+    overflow:hidden;
+    color:white;
+}
+
+/* TOP SYSTEM BAR */
+
+.system-bar{
+    height:35px;
+    background:#0f0f0f;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 20px;
+    font-size:14px;
+}
+
+.left-icons{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.right-icons{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.circle{
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    background:#2196f3;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:12px;
+}
+
+/* SECOND NAV BAR */
+
+.navbar{
+    height:55px;
+    background:#121212;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 25px;
+    border-bottom:1px solid #222;
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.filename{
+    font-size:15px;
+    color:#ddd;
+}
+
+/* VIEWER AREA */
+
+.viewer-content{
+    height:calc(100% - 90px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0e0e0e;
+}
+
+/* PROFILE CARD */
+
+.profile-card{
+    width:420px;
+    background:white;
+    color:black;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.banner{
+    height:170px;
+    background:linear-gradient(
+    135deg,
+    #1e88e5,
+    #0d47a1
+    );
+}
+
+.profile-image{
+    display:flex;
+    justify-content:center;
+}
+
+.profile-image img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    margin-top:-75px;
+    border:6px solid #1976d2;
+    object-fit:cover;
+}
+
+.profile-info{
+    text-align:center;
+    margin-top:10px;
+}
+
+.profile-info h2{
+    font-size:40px;
+}
+
+.profile-info p{
+    font-size:22px;
+    color:#444;
+    margin-top:10px;
+}
+
+.socials{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin:25px 0;
+}
+
+.socials div{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:22px;
+}
+
+.fb{background:#1877f2;}
+.tw{background:#1da1f2;}
+.insta{background:#e1306c;}
+.yt{background:#ff0000;}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+.btn{
+    background:#1e88e5;
+    color:white;
+    border:none;
+    padding:14px 40px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.stats{
+    margin:30px 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    color:#666;
+    font-size:18px;
+}
+
+.stats span{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.divider{
+    color:#bbb;
+}
+
+</style>
+</head>
+<body>
+
+<div class="viewer">
+
+    <!-- TOP BAR -->
+
+    <div class="system-bar">
+
+        <div class="left-icons">
+            <div class="circle">
+                <i class="fa-solid fa-image"></i>
+            </div>
+        </div>
+
+        <div>
+            Jun 2&nbsp;&nbsp;11:54 AM
+        </div>
+
+        <div class="right-icons">
+            <span>en</span>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-three-quarters"></i>
+        </div>
+
+    </div>
+
+    <!-- NAV BAR -->
+
+    <div class="navbar">
+
+        <div class="nav-left">
+            <span>91%</span>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="filename">
+            WhatsApp Image 2025-05-25 at 21.48.28.jpeg
+        </div>
+
+        <div class="nav-right">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </div>
+
+    <!-- IMAGE AREA -->
+
+    <div class="viewer-content">
+
+        <div class="profile-card">
+
+            <div class="banner"></div>
+
+            <div class="profile-image">
+                <img src="https://i.pravatar.cc/300" alt="">
+            </div>
+
+            <div class="profile-info">
+                <h2>CodingLab</h2>
+                <p>YouTuber & Blogger</p>
+            </div>
+
+            <div class="socials">
+                <div class="fb"><i class="fab fa-facebook-f"></i></div>
+                <div class="tw"><i class="fab fa-twitter"></i></div>
+                <div class="insta"><i class="fab fa-instagram"></i></div>
+                <div class="yt"><i class="fab fa-youtube"></i></div>
+            </div>
+
+            <div class="buttons">
+                <button class="btn">Subscribe</button>
+                <button class="btn">Message</button>
+            </div>
+
+            <div class="stats">
+
+                <span>
+                    <i class="fa-regular fa-heart"></i>
+                    60.4k
+                </span>
+
+                <span class="divider">|</span>
+
+                <span>
+                    <i class="fa-regular fa-comment"></i>
+                    20k
+                </span>
+
+                <span class="divider">|</span>
+
+                <span>
+                    <i class="fa-solid fa-share"></i>
+                    12.4k
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
