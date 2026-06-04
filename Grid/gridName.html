@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Naming the Layout</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 250px 1fr 250px;
+            grid-template-rows: 80px 1fr 60px;
+            grid-template-areas:
+                "a a a"
+                "b c d"
+                "e e e";
+            gap: 20px;
+            height: 80vh;
+            width: 80vw;
+            margin: auto;
+            margin-top: 20px;
+            border: 2px solid white;
+        }
+
+        .a{
+            grid-area: a;
+            background-color: rgb(101, 101, 255);
+        }
+        .b{
+            grid-area: b;
+            background-color: rgb(155, 218, 155);
+        }
+        .c{
+            grid-area: c;
+            background-color: purple;
+        }
+        .d{
+            grid-area: d;
+            background-color: orange;
+        }
+        .e{
+            grid-area: e;
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="one" class="a">Header</div>
+        <div id="two" class="b">Sidebar</div>
+        <div id="three" class="c">Main Content</div>
+        <div id="four" class="d">Aside</div>
+        <div id="five" class="e">Footer</div>
+    </div>
+
+
+</body>
+</html>
