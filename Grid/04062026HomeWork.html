@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#1f2630;
+    color:white;
+}
+
+/* Top Navbar */
+.navbar{
+    height:60px;
+    background:#151c25;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+    border-bottom:1px solid #333;
+}
+
+/* Main Container */
+.container{
+    display:grid;
+    grid-template-columns:250px 1fr;
+    height:calc(100vh - 60px);
+}
+
+/* Sidebar */
+.sidebar{
+    background:#2b313b;
+    padding:15px;
+    overflow:auto;
+}
+
+.menu-item{
+    padding:12px;
+    margin-bottom:8px;
+    border-radius:6px;
+    background:#3a4049;
+}
+
+/* Content Area */
+.content{
+    padding:15px;
+    overflow:auto;
+}
+
+/* Stats Cards */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.card{
+    height:120px;
+    border-radius:8px;
+    padding:20px;
+    font-size:22px;
+    font-weight:bold;
+}
+.text-sm{
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    /* bgackground: #167d4d; */
+}
+
+.blue{background:#0d6efd;}
+.green{background:#198754;}
+.yellow{background:#ffc107;color:black;}
+.red{background:#dc3545;}
+
+/* Charts Section */
+.middle{
+    margin-top:20px;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:20px;
+}
+
+.chart{
+    background:#252d37;
+    height:370px;
+    border-radius:8px;
+    border:1px solid #444;
+}
+
+.map{
+    background:#2c7df0;
+    height:370px;
+    border-radius:8px;
+}
+
+/* Bottom Chat */
+.chat{
+    margin-top:20px;
+    height:350px;
+    background:#252d37;
+    border-radius:8px;
+    border:1px solid #444;
+    padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <h2>AdminLTE 4</h2>
+    <div>Alexander Pierce</div>
+</div>
+
+<div class="container">
+
+    <div class="sidebar">
+
+        <div class="menu-item">Dashboard</div>
+        <div class="menu-item">Dashboard v1</div>
+        <div class="menu-item">Dashboard v2</div>
+        <div class="menu-item">Dashboard v3</div>
+        <div class="menu-item">Widgets</div>
+        <div class="menu-item">Forms</div>
+        <div class="menu-item">Tables</div>
+        <div class="menu-item">Pages</div>
+        <div class="menu-item">Auth</div>
+
+    </div>
+
+    <div class="content">
+
+        <h1>Dashboard</h1>
+
+        <div class="cards">
+            <div class="card blue">
+                150<br>
+                <small>New Orders</small>
+                <div class="text-sm">More info</div>
+            </div>
+
+            <div class="card green">
+                53%<br>
+                <small>Bounce Rate</small>
+                <div class="text-sm">More info</div>
+            </div>
+
+            <div class="card yellow">
+                44<br>
+                <small>User Registrations</small>
+                <div class="text-sm">More info</div>
+            </div>
+
+            <div class="card red">
+                65<br>
+                <small>Unique Visitors</small>
+                <div class="text-sm">More info</div>
+            </div>
+        </div>
+
+        <div class="middle">
+
+            <div class="chart">
+                <h3 style="padding:15px">Sales Value</h3>
+                <img src="graph.jpeg" alt="Sales Graph" style="width:100%; height:100%;">
+            </div>
+
+            <div class="map">
+                <h3 style="padding:15px">Sales Value</h3>
+                <!-- <img src="map.jpeg" alt="Sales Map" style="width:100%; height:100%;"> -->
+            </div>
+
+        </div>
+
+        <div class="chat">
+            <h3>Direct Chat</h3>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
