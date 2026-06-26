@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong</title>
+</head>
+<style>
+        html{
+            background-color: darkgrey;
+        }
+
+        #container{
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        #table{
+            position: absolute;
+            width: 600px;
+            border-bottom: 9px solid #246B47;
+            margin: 180px 100px;
+        }
+
+        #table:before{
+            content: "";
+            width: 8px;
+            height: 60px;
+            background-color: grey;
+            position: absolute;
+            margin-left: 300px;
+            margin-bottom: -50px;
+        }
+
+        #table:after{
+            position: absolute;
+            content: "";
+            width: 540px;
+            height: 150px;
+            border-left: 5px solid black;
+            border-right: 5px solid black;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+
+        #ball{
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-top: 80px;
+        background-color: white;
+        -webkit-animation: bounce 2s linear infinite;
+        }
+        #ball:before{
+            content: "";
+            width: 8px;
+            height: 45px;
+            background-color: grey;
+            position: absolute;
+            margin-left: 300px;
+            /* margin-bottom: -50px; */
+            margin-top: -36px;
+        }
+        @-webkit-keyframes bounce{
+            0%, 100%{
+                margin-top: 80px;
+                margin-left: 0;
+            }
+            10%{
+                margin-top: 85px;
+                margin-left: 200px;
+            }
+            25% {
+                margin-left: 450px;
+                margin-top: 120px;
+            }
+            30%{
+                margin-left: 550px;
+                margin-top: 170px;
+            }
+            40%{
+                margin-left: 700px;
+                margin-top: 115px;
+            }
+            50%{
+                margin-left: 550px;
+                margin-top: 115px;
+            }
+            60%{
+                margin-left: 350px;
+                margin-top: 125px;
+            }
+            70%{
+                margin-left: 190px;
+                margin-top: 170px;
+            }
+        }
+
+        .paddle{
+            position: absolute;
+            width: 55px;
+            height: 65px;
+            border-radius: 45%;
+            background-color: #B22400;
+        }
+
+        #left{
+            margin-top: 70px;
+            margin-left: -20px;
+            -webkit-transform: rotateY(0deg);
+            -webkit-animation: hitOne 2s linear infinite;
+        }
+        
+        #left:before{
+        content:'';
+            position: absolute;
+            width: 15px;
+            height: 30px;
+            background-color: #493420;
+            margin-top: 57px;
+            margin-left: 20px;
+            border-radius: 0 0 20% 20%;
+        }
+
+        #right{
+            margin-left: 700px;
+            margin-top: 80px;
+            background-color: #4b0f00;
+            -webkit-animation: hitTwo 2s linear infinite;
+        }
+        
+        #right:before{
+            content:'';
+            position: absolute;
+            width: 15px;
+            height: 30px;
+            background-color: #493420;
+            margin-top: 57px;
+            margin-left: 20px;
+            border-radius: 0 0 20% 20%;
+        }
+
+        @-webkit-keyframes hitOne{
+            0%, 100% {
+                -webkit-transform: rotateY(0deg);
+            }
+            5%{
+                -webkit-transform: rotateY(-90deg);
+                background-color: #4B0F00;
+            }
+        }
+
+        @-webkit-keyframes hitTwo{
+            0%, 100%{
+                -webkit-transform: rotateY(0deg);
+            }
+            
+            35%{
+                -webkit-transform: rotateY(0deg);
+                background-color: #4b0f00;
+            }
+            
+            
+            40%{
+                -webkit-transform: rotateY(-90deg);
+                background-color: #b22400;
+            }
+            70%{
+                -webkit-transform: rotateY(0deg);
+                background-color: #4b0f00;
+            }
+        }
+
+
+        
+
+</style>
+<body>
+    
+    <div id="container">
+        
+        <div id = "left" class="paddle"> </div>
+        <div id="table"></div>
+        <div id="ball"></div>
+        <div id="right" class="paddle"></div>
+    </div>
+</body>
+</html>
